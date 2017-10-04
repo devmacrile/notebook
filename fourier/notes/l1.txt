@@ -1,0 +1,31 @@
+analysis vs. synthesis
+
+Periodicity in time => frequency
+e.g. number of repetitions/cycles in a second, harmonic motion
+
+Periodicity in space => period
+e.g. quantity/measurement of repeating pattern, say length
+
+These two are not the same; different feel, arise in different problems
+But do come together in, e.g., wave motion
+
+Again, two descriptors come in: frequency and wavelength.
+In the case of wave motion, there is a relationship between these two
+phenomena determined by the velocity (distance=rate*time)
+=> reciprocal relationship between the frequency and the wavelength
+
+In the analysis/synthesis of fourier series, there will be a reciprocal
+relationship between the frequency and the wavelength.  This is something to which to be
+attuned.  Will see this constantly.
+
+"Somehow I want to use fourier analysis on this problem.. what are the reciprocal relationships?"
+
+Why does periodicity allow mathematical description?  Where does math come in?
+Because there are simple mathematical functions (sin/cos) that are periodic (repeat) and so can
+be used to model periodic phenomena.
+
+cos(t), sin(t) are periodic of period 2pi
+cos(t + 2pi) = cos(t), sin(t + 2pi) = sin(t)
+Why?
+Because sin and cos are associated with the simplest object that regularly repeats: the circle!
+Fundamental link between trigonometric functions and periodicity

@@ -1,0 +1,40 @@
+High stakes question.
+Look at some examples.
+Ex 1: switch signal; on for half second, off for half second, repeats
+      Can compute easily f_hat(k) (i.e. the fourier coefficient)
+      Can we write f(t) = sum from -n to n (f_hat(k) * e^(2*pi*i*k*t)?
+      No - at least not for a _finite_ sum
+
+Cannot represent a sum of discontinuous functions by a finite sum of continuous functions
+Cannot represent a sum of non-differentiable function by a finite sum of differentiable functions
+
+Maxim: it takes high frequencies to make sharp corners (takes more and more terms, higher and
+higher frequencies to make that bend).
+
+To represent the general periodic phenomena (signals), we have to consider infinite sums!
+(this is a mathematical point; of course, cannot evaluate infinite sum in practice)
+
+Any non-smooth signal will generate infinitely many Fourier coefficients.
+
+Have to deal with issues of convergence.
+Need conspiracy of cancellations to make such a series converge (because of the oscillations).
+This makes it difficult to study.
+Summary of the main results:
+- Convergence when signal is continuous (smooth)
+- Convergence when have jump discontinuity
+- Convergence in general needs a fundamental change in perspective
+
+-Continuous case of sum converges to f(t) for each t (i.e. each point of continuity).
+-Smooth case - again converges; get uniform convergence (i.e. can control the rate of convergence)
+-If t0 is a point of jump discontinuity, then the sum converges at t0 to average of the jump 
+ (i.e. 1/2 * f(t0+) + f(t0-))
+
+General case
+Need a different notion of convergence (of the infinite series).
+Learned by hard lessons (decades, centuries of work) not to ask for convergence of 
+a sum like this at particular points.  Moved from plugging in values of t and asking
+if values converge, to asking for _convergence in the mean_. (sometimes called convergence in energy in engineering)
+Proof of this idea is in the results it affords you!
+Suppose f(t) if periodic of period 1.  Further suppose integral(0, 1) (f(t)^2) dt < inf (i.e. finite).
+Not too restrictive assumptions/conditions (i.e. most relevant functions will satisfy this).
+Then mean-square convergence!

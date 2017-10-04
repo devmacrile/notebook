@@ -1,0 +1,62 @@
+Identifying the fourier series with the mathematical study of periodicity
+
+Big point of the course: learn to see symmetry; periodicity is a type of symmetry
+
+Periodic phenomena are generally very complicated.. how can we use very simple 
+periodic functions (sin/cos) to model complicated periodic phenomena?
+That's the topic of this lecture
+
+How high should we aim?  How general should we hope to get?
+Pretty high.
+
+Not all phenomena are periodic
+But, can still apply...
+Can force periodicity by repeating finite pattern (signal) of interest
+   Called periodization.  
+   Don't have a periodic phenomena?  Make it periodic, and see if periodic analysis
+   can be applied
+
+Important, if not obvious, maxim:
+If we "know" a periodic function on an interval of length 1 (not just a particular interval,
+but any interval), then we know it anywhere.
+
+Can modify and combine sin(2*pi*t), cos(2*pi*t) to model general periodic signals, period 1.
+Maxim: One period, many frequencies (the big idea).
+What does this mean exactly?
+e.g. sin(2*pi*t) has period 1, frequency 1
+     sin(4*pi*t) has period 1/2, frequency 2, but also has period 1 (that larger _double_ pattern repeats)
+     sin(6*pi*t) has period 1/3, frequency 3, but also has period 1 (for ^ same reason)
+Combination
+     sin(2*pi*t) + sin(4*pi*t) + sin(6*pi*t)
+     The period of this sum is 1 ("slowest" has to catch up, gcd-like)
+     One period in the sum; many frequencies, but only one period
+     So for complicated periodic signals, better to talk about the frequencies that go into it
+     rather than the period.  Fix the period to have length 1, talk about constituting frequencies.
+
+Had a summation written out describing sums of sine/cosine.
+But, there is a better representation.
+"By far better to represent sine and cosine via complex exponentials and write the sum that way."
+
+e ^ (2*pi*i*k*t) = cos(2*pi*k*t) + i*sin(2*pi*k*t)
+
+Then can convert a trigonometric sum to the form utilizing complex exponentials.
+There is a very important symmetry property here with this substitution.  Wind up with complex
+numbers, but not just any complex numbers.  They satisfy the symmetry property, and because
+of this the total sum is _real_.
+
+complex conjugate refresher: (a + bi), then (a - bi) is the complex conjugate
+notation is bar over variable representing complex number (i.e. capital C)
+complex number equal to its conjugate => it's real
+
+Now, again, how general can this be?
+In a form now, algebraically, where we can ask this question.
+Fundamental question:  have a function f(t) periodic of t
+Can we write this function in the form above?  can we write this function in terms of sines and cosines?
+Answer? Next time.  (But, yeah)
+
+Suppose we can do this.  What has to happen?
+What are the mystery coefficients Ck in terms of f?  (unknowns in expression are the coefficients, can we solve for them?)
+Solve for the Ck.  Start by isolating the mth coefficient Cm.
+Cool, that's as far as we can go via algebra... Next?  Try differentiation... derivatives won't
+work, but integrals will.  So integrate both sides from 0 to 1 (one period all we need!)
+Good chunk of that will integrate to 0 => Cm will be a much simpler integral.

@@ -1,0 +1,78 @@
+Important condition is integrability (and an easy one to verify)
+Say f(t) is square integrable if the integral of the square is finite.
+(i.e integral(0, 1) abs(f(t))^2 dt < infinity)
+
+If f(t) if periodic, square integrable
+then you form the fourier coefficients as before, and
+the integral between f(t) and the fourier coefficient sum (over n)
+from 0 to 1 tends to 0 as n tends to infinity.
+
+f,g square integrable on [0,1], then their inner product (generalization
+of dot product for vectors) is:
+(f, g) = integral(0, 1) f(t) * g(t)_bar dt    (where _bar indicates complex conjugate)
+Allows you to define orthogonality; when two vectors are perpendicular.
+Orthogonal if (f, g) = 0
+
+^ This is the definition.  Where does the definition come from?
+The desire to satisfy the pythagorean theorme.
+
+Norm of a function: (f, f) = ||f||^2  (dot product with itself is norm squared)
+
+Pythag thm: f is orthogonal to g if and only if the norm^2 of f+g
+||f + g|| ^2 = ||f||^2 + ||g||^2
+if and only if (f, g) = 0
+
+Why?
+Vector addition.  vectors u, v, then u + v is vector from source of u to tip of v.
+Forms a right triangle, so ||u + v||^2 = ||u||^2 + ||v||^2
+u+v /|
+   /_| v
+    u
+Trick is extending this from vectors to functions, via analogy
+
+(e^(2*pi*i*n*t), e^(2*pi*i*m*t)) = {0 if m != n, 1 if m=n}
+These are orthonormal functions.
+Might say: "I should, via this analogy, be able to visualize what it means
+for two functions to be orthogonal."  NO! No reason you should be able to
+visualize when two functions are orthogonal.
+It's reasoning by analogy; establish that these functions are orthogonal,
+and apply intuition about orthogonality to these functions.  That's the beauty.
+
+The fourier coefficients are the projections of these functions onto 
+complex exponentials.
+One of the ways you use inner products is to define projections (orthogonal projections
+in particular).
+User inner product for vectors to define and compute projections.
+If u, v are two unit vectors, then projection of v onto u is (v, u),
+projection.  Breaking a vector down into it's component parts.
+vector projection is (v, u)u (since u is unit vector)
+What is the projection for function?
+The fourier coefficition is _exactly_ a projection.
+The nth fourier coefficient is _exactly_ the projection of f
+onto the nth complex exponential.
+And what is the Fourier series?
+It's to write the sum from -inf to inf over k of f's projection onto 
+the kth complex exponential multiplied by that kth complex exponential.
+Trying to decompose the function into simpler components, which in this case
+happen to be the complex exponentials!
+Another way to say this:
+The complex exponentials create an orthonormal basis for these square integral
+periodic functions. (not the only one! i.e. wavelets are a different basis)
+The coefficients, as they are for any orthonormal basis, are the projections of 
+the function onto the bases
+
+It's this point of view that is important to carry forward! 
+Reason by analogy here.
+
+Application?
+Rayleigh's identity
+integral(0, 1) |f(t)|^2 dt = sum_k(-inf, inf) |f_hat(k)|^2
+The length of a vector     =  the sum of the squares of its components
+
+The components of a function are its Fourier coefficients
+
+
+Application of fourier series to heat flow
+THE problem that launched the whole subject
+Have a region in space with an initial temperature distribution f(x) of temp
+How does the temperature change in position and time?
