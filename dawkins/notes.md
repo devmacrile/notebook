@@ -33,7 +33,7 @@ opposite (7/12 hawks to 5/12 doves).
                           --injury 100  
 
 
-Changing the `--tpenalty parameter (cost of lengthy posturing for doves) to `22 gives us, approximately
+Changing the `--tpenalty` parameter (cost of lengthy posturing for doves) to `22` gives us, approximately
 the numbers claimed by Dawkins.. So not sure if his scenario has to do with specific fecundity rates or
 ways of choosing reproductive birds??
 
