@@ -35,8 +35,11 @@ opposite (7/12 hawks to 5/12 doves).
 
 Changing the `--tpenalty` parameter (cost of lengthy posturing for doves) to `22` gives us, approximately
 the numbers claimed by Dawkins.. So not sure if his scenario has to do with specific fecundity rates or
-ways of choosing reproductive birds??
+ways of choosing reproductive birds??  Could this be a typo?  
 
+Still, interesting point is that we do not actually care about the individual matchups - a hawk will 
+always beat a dove - but rather the interplay between the two strategies, neither of which are 
+stable individually yet are stable together.  
 
 
 #### Mating strategy  
