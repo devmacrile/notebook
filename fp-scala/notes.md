@@ -93,3 +93,23 @@ A *parameter* can be:
   - A call-by-name parameter, like (y: => Double)  
 
  
+#### Functions and Data  
+
+Scala keeps the names of types and values in *different namespaces*.
+
+Any method with a parameter can be used like an infix operator!  
+
+i.e. `r.add(s)` becomes `r add s`  
+
+The *precedence* of an operator is determined by its first character (so when overloading, single rule that 
+determines precendce of operators).  
+
+For example, parenthize the following expression:  
+
+	a + b ^? c ?^ d less a ==> b | c  
+
+Without changing meaning, would be:  
+
+	((a + b) ^? (c ?^d)) less ((a ==> b) | c)  
+
+
